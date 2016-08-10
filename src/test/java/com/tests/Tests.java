@@ -1,4 +1,4 @@
-package com.framework.tests;
+package com.tests;
 
 import com.framework.flow.ActionsFlow;
 import com.framework.util.PropertyLoader;

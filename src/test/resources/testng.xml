@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="com.framework.tests.Tests" verbose="5" data-provider-thread-count="1">
+<suite name="com.tests.Tests" verbose="5" data-provider-thread-count="1">
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
-		    <class name="com.framework.tests.Tests"/>
+		    <class name="com.tests.Tests"/>
 		</classes>
 	</test>  
 </suite>
