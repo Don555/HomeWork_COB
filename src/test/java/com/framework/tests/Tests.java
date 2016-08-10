@@ -1,4 +1,4 @@
-package com.framework.pages;
+package com.framework.tests;
 
 import com.framework.flow.ActionsFlow;
 import com.framework.util.PropertyLoader;
@@ -30,7 +30,6 @@ public class Tests {
 
 		driver.navigate().to(PropertyLoader.loadProperty("url", PROP_FILE));
 		driver.manage().window().maximize();
-
 	}
 
 

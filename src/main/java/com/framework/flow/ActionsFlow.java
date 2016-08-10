@@ -1,8 +1,8 @@
 package com.framework.flow;
 
-import com.tests.LoginPage;
-import com.tests.MailPage;
-import com.tests.MailPageReceivedLetter;
+import com.framework.pages.LoginPage;
+import com.framework.pages.MailPage;
+import com.framework.pages.MailPageReceivedLetter;
 import com.framework.util.PropertyLoader;
 import org.openqa.selenium.WebDriver;
 
