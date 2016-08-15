@@ -3,11 +3,7 @@ package com.framework.util;
 import java.io.IOException;
 import java.util.Properties;
 
-/*
- * Class that extracts properties from the prop file.
- * 
- * @author Sebastiano Armeli-Battana
- */
+
 public class PropertyLoader {
 
 	public static final String TEST_DATA = "/application.test_data";
