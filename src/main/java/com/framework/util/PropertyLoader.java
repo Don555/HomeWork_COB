@@ -6,16 +6,15 @@ import java.util.Properties;
 
 public class PropertyLoader {
 
-	public static final String TEST_DATA = "/application.test_data";
 	public static final String PROP_FILE = "/application.properties";
         
-        private PropertyLoader() {}
+	private PropertyLoader() {}
 
-	public static String loadProperty(String name, String file) {
+	public static String loadProperty(String name) {
 		Properties props = new Properties();
 		try {
-			props.load(PropertyLoader.class.getResourceAsStream(file));
-		} catch (IOException e) {
+			props.load(PropertyLoader.class.getResourceAsStream(PROP_FILE));
+			} catch (IOException e) {
 			e.printStackTrace();
 		}
 
