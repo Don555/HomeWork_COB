@@ -35,20 +35,23 @@ public class CalculatorPage {
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(LOAD_LOCATOR, res));
     }
 
-    private void setData(String firstNum, String secondNum, Operations value){
+    private CalculatorPage setData(String firstNum, String secondNum, Operations value){
         firstNumberInput.typeText(firstNum);
         secondNumberInput.typeText(secondNum);
         calculatorOperator.setOperator(value);
+        return this;
     }
 
-    private void runCalculator(int timeout, String res){
+    private CalculatorPage runCalculator(int timeout, String res){
         goBtn.clickBtn();
         waitForResult(timeout, res);
+        return this;
     }
 
+    ///FluentInterface just as an example, can be improve or reduce in this particular case
     public void setDataAndRun(String firstNum, String secondNum, Operations value, String res){
-        setData(firstNum,  secondNum, value);
-        runCalculator(Helper.TIMEOUT, res);
+                setData(firstNum,  secondNum, value).
+                runCalculator(Helper.TIMEOUT, res);
     }
 
 }
