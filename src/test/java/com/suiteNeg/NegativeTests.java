@@ -1,4 +1,4 @@
-package com.tests;
+package com.suiteNeg;
 
 import com.framework.checker.Calculator;
 import com.framework.checker.Operations;
@@ -19,7 +19,6 @@ import java.util.concurrent.TimeUnit;
 import static com.framework.checker.Operations.*;
 import static com.framework.util.Helper.COLUMN_TO_VALIDATE;
 import static com.framework.util.Helper.ROW_TO_VALIDATE;
-import static com.framework.util.PropertyLoader.PROP_FILE;
 
 public class NegativeTests {
 

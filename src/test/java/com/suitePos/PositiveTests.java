@@ -1,4 +1,4 @@
-package com.tests;
+package com.suitePos;
 
 import com.framework.checker.Calculator;
 import com.framework.checker.Operations;
@@ -19,7 +19,6 @@ import java.util.concurrent.TimeUnit;
 import static com.framework.checker.Operations.*;
 import static com.framework.util.Helper.COLUMN_TO_VALIDATE;
 import static com.framework.util.Helper.ROW_TO_VALIDATE;
-import static com.framework.util.PropertyLoader.PROP_FILE;
 
 public class PositiveTests {
 
@@ -41,7 +40,7 @@ public class PositiveTests {
 		table = new HistoryTable(driver);
 	}
 
-	@Test(dataProvider = "ValidDataProvider", groups="Positive")
+	@Test(dataProvider = "ValidDataProvider", groups= "Positive.xml")
 	public void verifyPositive(String firstNum, String secondNum, Operations value) {
 		String res = Calculator.calculate(firstNum,secondNum,value);
 		calculatorPage.setDataAndRun(firstNum,secondNum,value,res);
